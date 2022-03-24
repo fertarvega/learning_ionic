@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color: #ffffff;">Report of games sold</ion-title>
+    <ion-button slot="end" size="small" style="margin-top: 5px; margin-right: 15px" color="success" [routerLink]="['/list']">Go Back</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+
+    <ion-card>
+      <ion-card-header>
+        Real informations about these games
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas style="position: relative; height:20vh; width:40vw"></canvas>
+      </ion-card-content>
+    </ion-card>
+ 
+  </div>
+</ion-content>

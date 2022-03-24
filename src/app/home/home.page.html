@@ -1,31 +1,47 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar style="color: #ffffff;">
     <ion-title>
-      Simple Calculator
+      Homework
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Simple Calculator</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <div id="container">
     <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
-    
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
+      <ion-grid style="height: 100%">
+        <ion-row class="ion-align-items-center" style="height: 100%;">
+          <ion-col size="12" class="ion-text-center">
+            <ion-card-header>
+              <img src="https://defkey.com/content/images/program/dyson-sphere-program-pc-2021-02-04_01-04-11-icon-resized.png">
+              <ion-card-title style="color: #B82BFF;">Welcome</ion-card-title>
+            </ion-card-header>
 
-      <ion-button color="primary" expand="full">Primary</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="center" style="height: 100%">
+          <ion-card-content>
+            <ion-item>
+              <ion-label color="success" position="floating">Username</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label color="success" position="floating">Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+          </ion-card-content>
+
+
+        </ion-row>
+        <ion-row class="center" style="height: 100%">
+          <ion-button color="success" [routerLink]="['/list']">Login</ion-button>
+
+        </ion-row>
+      </ion-grid>
+      <!-- <ion-button color="warning" (click)="CallApi()">API</ion-button> -->
+      
     </ion-card>
   </div>
 </ion-content>
